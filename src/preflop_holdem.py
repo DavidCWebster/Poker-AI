@@ -289,7 +289,7 @@ if __name__ == "__main__":
     # Train in batches of 50,000 hands
     ITERATIONS = 50000
     cfr = PreflopHoldemCFR(create_infoSet, create_history, iterations=ITERATIONS)
-    for i in range(20):
+    for i in range(5):
         try:
             abstraction.load_dataset(i)
         except Exception as e:

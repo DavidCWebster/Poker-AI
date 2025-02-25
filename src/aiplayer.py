@@ -208,7 +208,7 @@ class CFRAIPlayer(AIPlayer):
     def __init__(self, balance) -> None:
         super().__init__(balance)
 
-        self.preflop_infosets = joblib.load("../src/preflop_infoSets_batch_19.joblib")
+        self.preflop_infosets = joblib.load("../src/preflop_infoSets_batch_5.joblib")
         self.postflop_infosets = joblib.load("../src/postflop_infoSets_batch_19.joblib")
 
     def place_bet(self, observed_env):
